@@ -3,13 +3,14 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
-import Home from './sections/Home';
+import Home from './sections/Home.js';
 import Movie from './sections/Movie';
 import SearchResult from './sections/SearchResult';
 
 
 function App() {
-  return (
+  
+  return(
     <Router>
       <Navbar/>
       <Switch>
@@ -18,7 +19,7 @@ function App() {
         <Route exact path="/search-result" component={SearchResult}/>
       </Switch>
     </Router>
-  );
+  )
 }
 
 export default App;
