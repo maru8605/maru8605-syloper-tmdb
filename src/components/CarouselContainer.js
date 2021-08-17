@@ -48,23 +48,3 @@ const CarouselContainer = () => {
 export default CarouselContainer
 
 
-// const movies = playingnow.slice(0, 5).map((item, index) => {
-//     return (
-//         <div style={{ height: 500, width: "100%" }} key={index}>
-//             <div className='carousel-center'>
-//                 <img style={{height: 600}} alt={item.title} src={item.backPoster}  />
-//             </div>
-//         </div>
-//     )
-// })
-// return (
-//     <RBCarousel
-//         animation={true}
-//         autoplay={true}
-//         pauseOnVisibility={true}
-//         slidesshowSpeed={5000}
-//         version={4}
-//     >
-//         {movies}
-//     </RBCarousel>
-// )

@@ -1,6 +1,6 @@
 import React  from 'react'
 import CarouselContainer from '../components/CarouselContainer'
-
+import MoviesCardsContainer from '../components/MoviesCardsContainer'
 
 
 const Home = () => {
@@ -16,6 +16,8 @@ const Home = () => {
                     <CarouselContainer/>
 
                     <h2 className='my-4'> Peliculas </h2>
+
+                    <MoviesCardsContainer/>
                 </div>
             </div>
         </div>
