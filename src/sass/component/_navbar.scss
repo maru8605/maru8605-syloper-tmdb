@@ -1,0 +1,53 @@
+@import "../common/variables.scss";
+@import "../common/mixins.scss";
+
+.nav {
+  background-color: $darkBlue;
+  padding: 30px 10px;
+
+  @include phone {
+    flex-direction: column;
+  }
+}
+.logo {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  @include phone {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+}
+// .search {
+//   width: 300px;
+// }
+.search-input {
+  width: 350px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.1em;
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  @include phone {
+    width: 100%;
+  }
+}
+.search-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 7px 36px;
+  border: none;
+  background: $gradiente;
+  border-radius: 30px;
+  position: absolute;
+  right: 30px;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
