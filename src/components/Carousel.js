@@ -1,37 +1,20 @@
-import React, {useState, useEffect} from 'react'
-import RBCarousel from 'react-bootstrap-carousel';
-//import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
-import {fetchMovies} from '../service';
-import Page from '../components/Page'
+import React from 'react'
 
-const Carousel = () => {
-    const [playingnow, setPlayingNow] = useState([])
+const Carousel = ({item}) => {
 
-    useEffect(() => {
-        const fetchApi = async() => {
-            setPlayingNow( await fetchMovies())
-           
-        }
-        
-        fetchApi()
-        
-    }, []);
+const {title, backPoster} = item;
 
-       const movie = playingnow.slice(0, 5).map((item, index) => {
-           return (
-              <div key={index}>
-                  <div className='carousel-center'>
-                      <img style={{height: 600}} alt={item.title} src={item.backPoster} />
-                  </div>
-              </div>
-           )
-       })
     return (
-        <RBCarousel 
-        
-        >
-            {movie}
-        </RBCarousel>
+      
+      <div style={{ height: 500, width: "100%" }} >
+            <div className='carousel-center'>
+                <img style={{height: 600}} alt={title} src={backPoster}  />
+                <h2>{title}</h2>
+            </div>
+            
+            
+        </div>
+    
     )
 }
 
