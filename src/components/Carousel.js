@@ -9,9 +9,9 @@ const {title, backPoster} = item;
       <div style={{ height: 500, width: "100%" }} >
             <div className='carousel-center'>
                 <img style={{height: 600}} alt={title} src={backPoster}  />
-                <h2>{title}</h2>
+                
             </div>
-            
+            <div className='position-absolute bottom-0 start-50 translate-middle-x fs-3 bg-light transparent mb-2 px-2'>{title}</div>
             
         </div>
     

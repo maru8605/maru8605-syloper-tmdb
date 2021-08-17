@@ -6,6 +6,7 @@ import Carousel from './Carousel'
 
 const CarouselContainer = () => {
     const [playingnow, setPlayingNow] = useState([])
+    const {title} = playingnow
 
     useEffect(() => {
         const fetchApi = async() => {
@@ -18,26 +19,26 @@ const CarouselContainer = () => {
     }, []);
 
  return(
-    
+    <>
      <RBCarousel
-     animation={true}
-             autoplay={true}
-              pauseOnVisibility={true}
-              slidesshowSpeed={5000}
-              version={4}
+        animation={true}
+        autoplay={true}
+        pauseOnVisibility={true}
+        slidesshowSpeed={5000}
+        version={4}
      >
-     {playingnow.slice(0,5).map((item, index) => (
-         <Carousel
-            key={index}
-            item={item}
-         />
-     ) )
-         
-     }
+        {playingnow.slice(0,5).map((item, index) => (
+            <Carousel
+                key={index}
+                item={item}
+            />
+        ) )      
+        }
       
      </RBCarousel>
      
-    
+     <div style={{color:'#000'}}> {title} hola</div>
+    </>
  )   
 
 
