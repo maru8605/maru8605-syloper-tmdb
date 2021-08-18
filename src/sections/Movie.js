@@ -1,24 +1,31 @@
  import React, {useState, useEffect} from 'react'
 import {fetchMovieDetail} from '../service/index';
+import { fetchActors } from '../service';
 import {Link} from 'react-router-dom';
 import ReactStars from 'react-rating-stars-component';
-import ActorsDetails from '../components/ActorsDetails';
+import ActorsCard from '../components/ActorsCard'
+//import ActorsDetails from '../components/ActorsDetails';
 
 const Movie = ({match}) => {
      let params = match.params
      const [moviedetail, setMovieDetail] = useState([])
-     const { title, backdrop_path, poster_path, overview, vote_average} = moviedetail;
+     const [actors, setActors] = useState([]);
+     const { title,  poster_path, overview, vote_average} = moviedetail;
+     //const {idC, img, character, name} = actors;
+
      useEffect(() => {
          const fetchApi = async() => {
-             setMovieDetail( await fetchMovieDetail(params.id))
+            setMovieDetail( await fetchMovieDetail(params.id))
+            setActors ( await fetchActors(params.id))
          }
-         console.log(fetchApi)
+        
          fetchApi()
      }, [params.id])
 
+    
     return (
 
-        <div className='row mt-3 mb-5'>
+        <div className='row mt-3 mb-5 mx-2'>
             <div className='col-md-8 col-sm-6'>
                 <div className='container'>
                     <div className='row mt-2'>
@@ -45,10 +52,24 @@ const Movie = ({match}) => {
                     />
                 </Link>
             </div>
-
-            <ActorsDetails/>
+            <div className='row mt-5   '>
+            {actors.slice(0, 6).map((c, i) => (
+                <ActorsCard
+                    key={i}
+                    c={c}
+                />
+            ))}
+            </div>
+           
        </div>
     )
 }
 
 export default Movie
+ //<ActorsDetails match={match}/>
+//  {actors.slice(0, 6).map((index, item) => (
+//                 <ActorsCard
+//                     key={index}
+//                     item={item}
+//                 />
+//             ))}

@@ -6,7 +6,7 @@ import Carousel from './Carousel'
 
 const CarouselContainer = () => {
     const [playingnow, setPlayingNow] = useState([])
-    const {title} = playingnow
+    
 
     useEffect(() => {
         const fetchApi = async() => {

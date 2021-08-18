@@ -1,9 +1,15 @@
 import React from 'react'
 
-const ActorsCard = () => {
+const ActorsCard = ({c}) => {
+    
+    const {img, character, name} = c
+
     return (
-        <div>
-            <h1>desde actores</h1>
+        <div className='col-md-3  text-center'>
+            <img className='img-fluid mx-auto d-block rounded'
+             src={img} alt={name}/>
+            <p className='font-weight-bold text-center'>{name}</p>
+            <p className='text-center'> {character}</p>
         </div>
     )
 }
