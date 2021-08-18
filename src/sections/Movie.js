@@ -2,7 +2,7 @@
 import {fetchMovieDetail} from '../service/index';
 import {Link} from 'react-router-dom';
 import ReactStars from 'react-rating-stars-component';
-
+import ActorsDetails from '../components/ActorsDetails';
 
 const Movie = ({match}) => {
      let params = match.params
@@ -45,6 +45,8 @@ const Movie = ({match}) => {
                     />
                 </Link>
             </div>
+
+            <ActorsDetails/>
        </div>
     )
 }
