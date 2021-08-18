@@ -3,10 +3,11 @@ import axios from 'axios';
 const apiKey = 'a2c5b0aa63f4810637029fdd61a1549b'
 const url = 'https://api.themoviedb.org/3'
 const nowPlayingUrl =  `${url}/movie/now_playing`;
-const movieURL = `${url}/movie`;
+const movieUrl = `${url}/movie`;
 const personUrl = `${url}/trending/person/week`;
 
 //Funciones de consulta a la api
+// trae las peliculas estrenos
 export const fetchMovies = async () => {
     try {
         const { data } = await axios.get(nowPlayingUrl, {
@@ -30,4 +31,18 @@ export const fetchMovies = async () => {
 
         return modifiedData;
     } catch(error){}
+}
+
+//Trae informacion de pelicula por id
+export const fetchMovieDetail = async (id) => {
+    try {
+        const { data } = await axios.get(`${movieUrl}/${id}`, {
+            params: {
+                api_key: apiKey,
+                language: 'es'
+            }
+        });
+        return data;
+        
+    } catch (error) { }
 }

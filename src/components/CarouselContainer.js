@@ -36,8 +36,6 @@ const CarouselContainer = () => {
         }
       
      </RBCarousel>
-     
-     <div style={{color:'#000'}}> {title} hola</div>
     </>
  )   
 
