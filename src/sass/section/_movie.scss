@@ -1,0 +1,13 @@
+@import "../common/variables.scss";
+@import "../common/mixins.scss";
+
+.regresar-btn {
+  height: 46px;
+  padding: 7px 36px;
+  border: none;
+  background: $gradiente;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+}

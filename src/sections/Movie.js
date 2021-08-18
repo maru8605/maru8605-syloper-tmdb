@@ -1,7 +1,7 @@
  import React, {useState, useEffect} from 'react'
 import {fetchMovieDetail} from '../service/index';
-import {Link} from 'react-router-dom'
-import ReactStars from 'react-rating-stars-component'
+import {Link} from 'react-router-dom';
+import ReactStars from 'react-rating-stars-component';
 
 
 const Movie = ({match}) => {
@@ -33,10 +33,17 @@ const Movie = ({match}) => {
             <div className='col-md-4 col-sm-6'>
                 <h2>{title}</h2>
                 <div className='d-flex ' >
-                    <ReactStars count={vote_average} size={20} color={'#f4c10f'} />
-                    <p className='fw-bold ms-1'>   {vote_average} </p>
+                    <ReactStars count={vote_average} size={20} color={'#f4c10f'}className='d-inline' />
+                    <p className='fw-bold ms-1'> {vote_average} </p>
                 </div>
                 <p className='pe-3'>{overview}</p>
+                <Link to={'/'}>
+                    <input
+                        type='button'
+                        value='Regresar'
+                        className='regresar-btn'
+                    />
+                </Link>
             </div>
        </div>
     )
