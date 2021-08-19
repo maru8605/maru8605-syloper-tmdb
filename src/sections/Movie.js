@@ -1,4 +1,5 @@
- import React, {useState, useEffect} from 'react'
+ import React, {useState, useEffect} from 'react';
+ import PropTypes from 'prop-types';
 import {fetchMovieDetail} from '../service/index';
 import { fetchActors } from '../service';
 import {Link} from 'react-router-dom';
@@ -54,24 +55,19 @@ const Movie = ({match}) => {
                     />
                 </Link>
             </div>
-            <div className='row mt-5   '>
-            {actors.slice(0, 6).map((c, i) => (
-                <ActorsCard
-                    key={i}
-                    c={c}
-                />
-            ))}
-            </div>
-           
+            <div className='row mt-5'>
+                {actors.slice(0, 6).map((item, index) => (
+                    <ActorsCard
+                        key={index}
+                        item={item}
+                    />
+                ))}
+            </div>    
        </div>
     )
 }
-
-export default Movie
- //<ActorsDetails match={match}/>
-//  {actors.slice(0, 6).map((index, item) => (
-//                 <ActorsCard
-//                     key={index}
-//                     item={item}
-//                 />
-//             ))}
+Movie.propTypes = {
+    match: PropTypes.array.isRequired   
+ }
+export default Movie;
+ 

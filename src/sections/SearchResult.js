@@ -23,7 +23,7 @@ const SearchResult = () => {
             setResult(respuesta.data.results)
        }
        fetchApi()
-    }, [])
+    }, [setSearch])
 
     return (
         <div className='row mt-3 '>

@@ -17,14 +17,14 @@ const CarouselContainer = () => {
     }, []);
 
  return(
-    <>
-     <RBCarousel
-        animation={true}
-        autoplay={true}
-        pauseOnVisibility={true}
-        slidesshowSpeed={5000}
-        version={4}
-     >
+        <>
+        <RBCarousel
+            animation={true}
+            autoplay={true}
+            pauseOnVisibility={true}
+            slidesshowSpeed={5000}
+            version={4}
+        >
         {playingnow.slice(0,5).map((item, index) => (
             <Carousel
                 key={index}
@@ -32,13 +32,10 @@ const CarouselContainer = () => {
             />
         ) )      
         }
-      
-     </RBCarousel>
-    </>
- )   
-
-
-    
+        
+        </RBCarousel>
+        </>
+    )      
 }
 
 export default CarouselContainer

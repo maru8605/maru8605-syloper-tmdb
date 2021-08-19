@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../sass/section/_movie.scss';
 import {Link} from 'react-router-dom'
 import ReactStars from 'react-rating-stars-component'
@@ -24,5 +25,7 @@ const MoviesCard = ( {item} ) => {
         </div>
     )
 }
-
+MoviesCard.propTypes = {
+    item: PropTypes.object.isRequired  
+ }
 export default MoviesCard

@@ -1,6 +1,7 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import ReactStars from 'react-rating-stars-component'
+import React from 'react';
+import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
+import ReactStars from 'react-rating-stars-component';
 
 const Card = ({item}) => {
 const {id, poster_path, title, vote_average} = item
@@ -21,5 +22,7 @@ const {id, poster_path, title, vote_average} = item
   </div>
     )
 }
-
+Card.propTypes = {
+    item: PropTypes.array.isRequired  
+ }
 export default Card

@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from 'react'
+import PropTypes from 'prop-types'
 import ActorsCard from './ActorsCard'
 import { fetchActors } from '../service';
 
 const ActorsDetails = ({match}) => {
     let params = match.id
     const [actors, setActors] = useState([]);
-    const {id, img, character, name} = actors
+   
 
     useEffect(() => {
         const fetchApi = async() => {
@@ -22,10 +23,12 @@ const ActorsDetails = ({match}) => {
                     key={index}
                     item={item}
                 />
-            ))}
-            
+            ))}    
         </div>
     )
 }
 
+ActorsDetails.propTypes = {
+    match : PropTypes.array.isRequired   
+ }
 export default ActorsDetails
