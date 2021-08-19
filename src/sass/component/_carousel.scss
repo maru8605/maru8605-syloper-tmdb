@@ -1,0 +1,38 @@
+@import "../common/variables.scss";
+@import "../common/mixins.scss";
+
+.carrusel {
+  height: 500;
+  width: 100%;
+}
+
+.description-container {
+  background-color: #fff;
+  opacity: 0.8;
+}
+
+.overview {
+  color: black;
+  width: 95%;
+  background-color: #fff;
+  bottom: 0;
+  font-size: 26px;
+  p {
+    display: none;
+  }
+}
+.img-movie:hover {
+  cursor: pointer;
+  p {
+    display: block;
+    @include desktop {
+      font-size: 20px;
+    }
+    @include tablet {
+      font-size: 16px;
+    }
+    @include phone {
+      font-size: 12px;
+    }
+  }
+}

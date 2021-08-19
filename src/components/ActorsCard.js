@@ -8,8 +8,10 @@ const ActorsCard = ({c}) => {
         <div className='col-md-3  text-center'>
             <img className='img-fluid mx-auto d-block rounded'
              src={img} alt={name}/>
-            <p className='font-weight-bold text-center'>{name}</p>
-            <p className='text-center'> {character}</p>
+             <div>
+            <p className=' text-center'>{name}</p>
+            <p className='text-center fw-bold'> {character}</p>
+            </div>
         </div>
     )
 }

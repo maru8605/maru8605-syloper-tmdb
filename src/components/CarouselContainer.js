@@ -10,12 +10,10 @@ const CarouselContainer = () => {
 
     useEffect(() => {
         const fetchApi = async() => {
-            setPlayingNow( await fetchMovies())
-           
+            setPlayingNow( await fetchMovies())  
         }
         
-        fetchApi()
-        
+        fetchApi()    
     }, []);
 
  return(

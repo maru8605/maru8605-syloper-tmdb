@@ -2,41 +2,9 @@ import axios from 'axios';
 
 const apiKey = 'a2c5b0aa63f4810637029fdd61a1549b'
 const url = 'https://api.themoviedb.org/3'
-const searchMovie = `${url}/search/movie?api_key=${apiKey}&query`
+
 const nowPlayingUrl =  `${url}/movie/now_playing`;
 const movieUrl = `${url}/movie`;
-//const personUrl = `${url}/trending/person/week`;
-
-//Funciones de consulta a la api
-
-//Busca peliculas 
-
-export const fetchSearch = async () => {
-    try {
-        const { data } = await axios.get( searchMovie , {
-            params: {
-                api_key: apiKey,
-                language: 'en_US',
-                page: 1
-            }
-        })
-        return data;
-        // const posterUrl = 'https://image.tmdb.org/t/p/original/';
-        // const modifiedData = data['results'].map((s) => ({
-        //     id: s['id'],
-        //    backPoster: posterUrl + s['backdrop_path'],
-        //     popularity: s['popularith'],
-        //     title: s['title'],
-        //    poster: posterUrl + s['poster_path'],
-        //     overview: s['overview'],
-        //     rating: s['vote_average'],
-        // }))
-
-        // return modifiedData;
-    } catch(error){}
-}
-
-
 
 
 // trae las peliculas estrenos
@@ -45,7 +13,7 @@ export const fetchMovies = async () => {
         const { data } = await axios.get(nowPlayingUrl, {
             params: {
                 api_key: apiKey,
-                language: 'en_US',
+                language: 'es',
                 page: 1
             }
         })
@@ -75,16 +43,16 @@ export const fetchMovieDetail = async (id) => {
             }
         });
         return data;
-        
+
     } catch (error) { }
 }
 
-//trae a los actores de las peliculas 
+//trae a los actores de las peliculas
 export const fetchActors = async(id) => {
     try{
         const { data } = await axios.get(`${movieUrl}/${id}/credits`, {
             params: {
-                api_key: apiKey,   
+                api_key: apiKey,
             }
         });
         const modifiedData = data['cast'].map((c) => ({

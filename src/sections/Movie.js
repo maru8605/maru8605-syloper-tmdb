@@ -4,14 +4,16 @@ import { fetchActors } from '../service';
 import {Link} from 'react-router-dom';
 import ReactStars from 'react-rating-stars-component';
 import ActorsCard from '../components/ActorsCard'
-//import ActorsDetails from '../components/ActorsDetails';
+
 
 const Movie = ({match}) => {
      let params = match.params
+
      const [moviedetail, setMovieDetail] = useState([])
      const [actors, setActors] = useState([]);
+
      const { title,  poster_path, overview, vote_average} = moviedetail;
-     //const {idC, img, character, name} = actors;
+     
 
      useEffect(() => {
          const fetchApi = async() => {
@@ -22,7 +24,7 @@ const Movie = ({match}) => {
          fetchApi()
      }, [params.id])
 
-    
+     
     return (
 
         <div className='row mt-3 mb-5 mx-2'>
@@ -39,9 +41,9 @@ const Movie = ({match}) => {
             </div>
             <div className='col-md-4 col-sm-6'>
                 <h2>{title}</h2>
-                <div className='d-flex ' >
-                    <ReactStars count={vote_average} size={20} color={'#f4c10f'}className='d-inline' />
-                    <p className='fw-bold ms-1'> {vote_average} </p>
+                <div className='d-flex  align-item-center' >
+                    <ReactStars count={vote_average} size={20} color='#f4c10f' />
+                    <p className='fw-bold ps-3'> {vote_average} </p>
                 </div>
                 <p className='pe-3'>{overview}</p>
                 <Link to={'/'}>
