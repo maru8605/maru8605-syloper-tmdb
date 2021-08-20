@@ -25,7 +25,7 @@ const Navbar = () => {
     return (
         <nav className='container-fluid py-4 nav d-flex justify-content-between'>
             <div className='logo  mx-5'>
-                <img src={Logo} />
+                <img src={Logo} alt='The movie Database'/>
             </div>
             <form 
             className='search mx-5' >

@@ -17,6 +17,6 @@ const ActorsCard = ({item}) => {
     )
 }
 ActorsCard.propTypes = {
-    item: PropTypes.array.isRequired  
+    item: PropTypes.object.isRequired  
  }
 export default ActorsCard

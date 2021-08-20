@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useContext } from 'react'
-import { useLocation } from "react-router-dom";
 import { SearchContext } from '../context/SearchContext';   
 import axios from 'axios'
 import Card from '../components/Card'
@@ -21,7 +20,7 @@ const SearchResult = () => {
             setResult(respuesta.data.results)
        }
        fetchApi()
-    }, [setSearch])
+    }, [search,setSearch])
 
     return (
         <div className='row mt-3 '>
