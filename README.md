@@ -16,3 +16,4 @@ Este proyecto fue realizado con  [Create React App](https://github.com/facebook/
 - La web cuenta con un buscador que nos permite filtrar entre miles de películas, para encontrar la de nuestro interés.
 
 
+![image](https://user-images.githubusercontent.com/55419544/130265953-191d1a26-d34b-412c-97b5-8e53addc018e.png)
