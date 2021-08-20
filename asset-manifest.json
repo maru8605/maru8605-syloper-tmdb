@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/syloper-tmdb/static/css/main.b4a0995b.chunk.css",
-    "main.js": "/syloper-tmdb/static/js/main.d13ccd6d.chunk.js",
-    "main.js.map": "/syloper-tmdb/static/js/main.d13ccd6d.chunk.js.map",
-    "runtime-main.js": "/syloper-tmdb/static/js/runtime-main.427a4bc7.js",
-    "runtime-main.js.map": "/syloper-tmdb/static/js/runtime-main.427a4bc7.js.map",
+    "main.css": "/syloper-tmdb/static/css/main.f45a0ee1.chunk.css",
+    "main.js": "/syloper-tmdb/static/js/main.beb98ecf.chunk.js",
+    "main.js.map": "/syloper-tmdb/static/js/main.beb98ecf.chunk.js.map",
+    "runtime-main.js": "/syloper-tmdb/static/js/runtime-main.62c50044.js",
+    "runtime-main.js.map": "/syloper-tmdb/static/js/runtime-main.62c50044.js.map",
     "static/css/2.c60870b9.chunk.css": "/syloper-tmdb/static/css/2.c60870b9.chunk.css",
-    "static/js/2.815ad13c.chunk.js": "/syloper-tmdb/static/js/2.815ad13c.chunk.js",
-    "static/js/2.815ad13c.chunk.js.map": "/syloper-tmdb/static/js/2.815ad13c.chunk.js.map",
-    "static/js/3.8eb5f7fe.chunk.js": "/syloper-tmdb/static/js/3.8eb5f7fe.chunk.js",
-    "static/js/3.8eb5f7fe.chunk.js.map": "/syloper-tmdb/static/js/3.8eb5f7fe.chunk.js.map",
+    "static/js/2.79486547.chunk.js": "/syloper-tmdb/static/js/2.79486547.chunk.js",
+    "static/js/2.79486547.chunk.js.map": "/syloper-tmdb/static/js/2.79486547.chunk.js.map",
+    "static/js/3.fd027434.chunk.js": "/syloper-tmdb/static/js/3.fd027434.chunk.js",
+    "static/js/3.fd027434.chunk.js.map": "/syloper-tmdb/static/js/3.fd027434.chunk.js.map",
     "index.html": "/syloper-tmdb/index.html",
     "static/css/2.c60870b9.chunk.css.map": "/syloper-tmdb/static/css/2.c60870b9.chunk.css.map",
-    "static/css/main.b4a0995b.chunk.css.map": "/syloper-tmdb/static/css/main.b4a0995b.chunk.css.map",
-    "static/js/2.815ad13c.chunk.js.LICENSE.txt": "/syloper-tmdb/static/js/2.815ad13c.chunk.js.LICENSE.txt",
+    "static/css/main.f45a0ee1.chunk.css.map": "/syloper-tmdb/static/css/main.f45a0ee1.chunk.css.map",
+    "static/js/2.79486547.chunk.js.LICENSE.txt": "/syloper-tmdb/static/js/2.79486547.chunk.js.LICENSE.txt",
     "static/media/logo-tm.bf7f470b.svg": "/syloper-tmdb/static/media/logo-tm.bf7f470b.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.427a4bc7.js",
+    "static/js/runtime-main.62c50044.js",
     "static/css/2.c60870b9.chunk.css",
-    "static/js/2.815ad13c.chunk.js",
-    "static/css/main.b4a0995b.chunk.css",
-    "static/js/main.d13ccd6d.chunk.js"
+    "static/js/2.79486547.chunk.js",
+    "static/css/main.f45a0ee1.chunk.css",
+    "static/js/main.beb98ecf.chunk.js"
   ]
 }
