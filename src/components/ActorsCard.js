@@ -6,7 +6,7 @@ const ActorsCard = ({item}) => {
     const {img, character, name} = item
 
     return (
-        <div className='col-md-3  text-center'>
+        <div className='col-md-2 col-sm-4   text-center' >
             <img className='img-fluid mx-auto d-block rounded'
              src={img} alt={name}/>
              <div>

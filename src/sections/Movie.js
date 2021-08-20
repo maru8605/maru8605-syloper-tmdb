@@ -55,7 +55,7 @@ const Movie = ({match}) => {
                     />
                 </Link>
             </div>
-            <div className='row mt-5'>
+            <div className='row mt-5 mx-auto'>
                 {actors.slice(0, 6).map((item, index) => (
                     <ActorsCard
                         key={index}
