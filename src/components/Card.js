@@ -23,6 +23,6 @@ const {id, poster_path, title, vote_average} = item
     )
 }
 Card.propTypes = {
-    item: PropTypes.array.isRequired  
+    item: PropTypes.object.isRequired  
  }
 export default Card

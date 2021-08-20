@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
-import {Link } from 'react-router-dom'
-import '../sass/component/_navbar.scss'
+import React, {useState, useContext} from 'react';
+import { SearchContext } from '../context/SearchContext';
+import {Link } from 'react-router-dom';
+import '../sass/section/_navbar.scss';
 import Logo from '../image/logo-tm.svg'; 
 
 
@@ -8,20 +9,23 @@ import Logo from '../image/logo-tm.svg';
 
 const Navbar = () => {
 
-    const [search, setSearch] = useState('')
-    
+    const {search, setSearch} = useContext(SearchContext)
+    const [text, setText] = useState('');
 
     const onChange = e => {
-        setSearch (    
+        setText (    
             [e.target.name] = e.target.value
         )      
-        
+        console.log(setText)
     }
 
+    const onClick = () => {
+        setSearch(text)
+    }
     return (
         <nav className='container-fluid py-4 nav d-flex justify-content-between'>
             <div className='logo  mx-5'>
-                <img src={Logo} alt='The Movie Database' />
+                <img src={Logo} />
             </div>
             <form 
             className='search mx-5' >
@@ -30,7 +34,7 @@ const Navbar = () => {
                     placeholder='Buscar'
                     className='search-input'
                     onChange={onChange}
-                    name={search}
+                    name={text}
                     
                 />
                 <Link to={'/search/?name='+search}>
@@ -38,6 +42,7 @@ const Navbar = () => {
                         type='submit'
                         value='Buscar'
                         className='search-btn'
+                        onClick={onClick} 
                     />
                 </Link>
             </form>

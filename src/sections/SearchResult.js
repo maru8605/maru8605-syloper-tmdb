@@ -1,16 +1,14 @@
-import React, { useEffect, useState } from 'react'
-import { useLocation } from "react-router-dom";   
+import React, { useEffect, useState, useContext } from 'react'
+import { useLocation } from "react-router-dom";
+import { SearchContext } from '../context/SearchContext';   
 import axios from 'axios'
 import Card from '../components/Card'
 
-function useQuery() {
-    return new URLSearchParams(useLocation().search);
-  }
+
 
 const SearchResult = () => {
-    let query = useQuery();
-    const [search, setSearch] = useState(query.get("name"))
     const [result, setResult] = useState([])
+    const {search, setSearch} = useContext(SearchContext)
     
     useEffect(() => {
         const fetchApi = async()=>{

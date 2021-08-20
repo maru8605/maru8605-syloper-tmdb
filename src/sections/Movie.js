@@ -67,7 +67,7 @@ const Movie = ({match}) => {
     )
 }
 Movie.propTypes = {
-    match: PropTypes.array.isRequired   
+    match: PropTypes.object.isRequired   
  }
 export default Movie;
  

@@ -1,0 +1,43 @@
+@import "../common/mixins.scss";
+@import "../common/variables.scss";
+
+.container-footer {
+  background-color: $darkBlue;
+  box-sizing: border-box;
+  color: $white;
+  padding: 10px 0 10px 0;
+}
+
+.names-box {
+  text-align: center;
+  h3 {
+    color: $white;
+  }
+  div {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+
+    a {
+      color: $white;
+      font-size: 25px;
+      margin: 10px;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+.rights-box {
+  font-size: 12px;
+  color: $white;
+  text-align: center;
+  a {
+    color: $white;
+    margin-left: 10px;
+    &:hover {
+      color: white;
+    }
+  }
+}
