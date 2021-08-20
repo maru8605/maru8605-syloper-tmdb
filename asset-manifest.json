@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/syloper-tmdb/static/css/main.f45a0ee1.chunk.css",
-    "main.js": "/syloper-tmdb/static/js/main.beb98ecf.chunk.js",
-    "main.js.map": "/syloper-tmdb/static/js/main.beb98ecf.chunk.js.map",
+    "main.js": "/syloper-tmdb/static/js/main.1cf28eee.chunk.js",
+    "main.js.map": "/syloper-tmdb/static/js/main.1cf28eee.chunk.js.map",
     "runtime-main.js": "/syloper-tmdb/static/js/runtime-main.62c50044.js",
     "runtime-main.js.map": "/syloper-tmdb/static/js/runtime-main.62c50044.js.map",
     "static/css/2.c60870b9.chunk.css": "/syloper-tmdb/static/css/2.c60870b9.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.c60870b9.chunk.css",
     "static/js/2.79486547.chunk.js",
     "static/css/main.f45a0ee1.chunk.css",
-    "static/js/main.beb98ecf.chunk.js"
+    "static/js/main.1cf28eee.chunk.js"
   ]
 }
