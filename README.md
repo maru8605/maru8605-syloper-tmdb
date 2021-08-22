@@ -4,7 +4,7 @@ Este proyecto fue realizado con  [Create React App](https://github.com/facebook/
 
 ## Challenge para la empresa Syloper
 
-- Desarroyado con ReactJS.
+- Desarroyado en ReactJS.
 - Se utilizó la libreria Boostrap y el pre-prosecesadorr Sass.
 - Responsive.
 - Consume la API: https://api.themoviedb.org
