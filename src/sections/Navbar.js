@@ -11,8 +11,9 @@ const Navbar = () => {
 
     const {search, setSearch} = useContext(SearchContext)
     const [text, setText] = useState('');
-
+    
     const onChange = e => {
+
         setText (    
             [e.target.name] = e.target.value
         )      
@@ -20,6 +21,7 @@ const Navbar = () => {
     }
 
     const onClick = () => {
+
         setSearch(text)
     }
     return (
